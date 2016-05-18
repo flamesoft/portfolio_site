@@ -4,6 +4,7 @@ require 'capybara/rspec'
 require 'middleman-core'
 require 'middleman-core/rack'
 require 'middleman-livereload'
+require 'middleman-deploy'
 
 middleman_app = ::Middleman::Application.new
 
