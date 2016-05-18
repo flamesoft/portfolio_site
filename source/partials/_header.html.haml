@@ -1,9 +1,10 @@
 #header
   %nav.navigation
-    #left_logo
-      = image_tag 'logo.png'
-
     %div.header_buttons
       %ul
         %li= link_to 'About', '/about.html', :relative => true, target:'_self'
         %li= link_to 'Projects', '/projects.html',:relative => true, target:'_self'
+
+  .post-container
+    .logo_left
+      = image_tag 'logo.png'

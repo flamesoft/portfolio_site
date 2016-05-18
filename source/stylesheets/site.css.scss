@@ -136,6 +136,9 @@ div.projects {
 .navigation {
     float: right;
     margin: 0;
+    img{
+      float: left;
+    }
     a {
       display:inline-block;
       width: 88px;
@@ -161,4 +164,16 @@ div.projects {
     li {
       display: inline;
     }
+}
+.post-container {
+    margin: 0;
+    overflow: auto;
+}
+.logo_left {
+    float: left;
+}
+.logo_left img {
+    display: block;
+    height: 3em;
+    float: left;
 }
