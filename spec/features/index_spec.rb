@@ -34,6 +34,7 @@ describe 'index', type: :feature do
   it 'renders navigation partial' do
     expect(page).to have_selector 'nav'
     within 'nav' do
+      expect(page).to have_link 'Home'
       expect(page).to have_link 'About'
       expect(page).to have_link 'Projects'
     end
