@@ -22,7 +22,13 @@ h1 {
   font-weight:bolder;
   margin: 0;
 }
-
+.intro {
+  margin: 0.5em 0;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  color: rgba(0,0,0,0.6);
+}
 .doc {
   margin: 0.5em 0;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -71,6 +77,10 @@ h1 {
     color: rgba(0,0,0,0.7);
     margin: 40px;
 }
+.section_h2_aboutIntro {
+    color: rgba(0,0,0,0.5);
+    margin: 10px;
+}
 section.top{
   margin-top: -45px;
   padding: 0;
@@ -78,7 +88,7 @@ section.top{
   position:auto;
   background: no-repeat center;
   background-size: 100%;
-  background-image: url('../images/land2.jpg');
+  background-image: url('../images/logo.svg');
   color: #fff;
   width: 100%;
   height: 500px;
