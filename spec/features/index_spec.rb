@@ -30,4 +30,12 @@ describe 'index', type: :feature do
       expect(page).to have_content 'Built using the awesome Middleman framework'
     end
   end
+
+  it 'renders navigation partial' do
+    expect(page).to have_selector 'nav'
+    within 'nav' do
+      expect(page).to have_link 'About'
+      expect(page).to have_link 'Projects'
+    end
+  end
 end
