@@ -1,5 +1,9 @@
-%nav.navigation
-  %div.header_buttons
-    %ul
-      %li= link_to 'About', 'https://middlemanapp.com', target:'_self'
-      %li= link_to 'Projects', 'https://middlemanapp.com', target:'_self'
+#header
+  %nav.navigation
+    #left_logo
+      = image_tag 'logo.png'
+
+    %div.header_buttons
+      %ul
+        %li= link_to 'About', '/about.html',  target:'_self'
+        %li= link_to 'Projects', '/projects.html', target:'_self'
