@@ -4,14 +4,22 @@ describe 'index', type: :feature do
     visit '/'
   end
 
-  it 'says hello to Yan' do
+  it 'says my name' do
     expect(page).to have_selector 'h1'
     within 'h1' do
-      expect(page).to have_content 'hello yan'
+      expect(page).to have_content 'Yan Zhang'
     end
   end
 
-  it 'display Middleman logo' do
-    expect(page).to have_css 'img[src*="middleman-logo.svg"]'
+  # it 'display logo' do
+  #   expect(page).to have_css 'img[src*="yan.jpg"]'
+  # end
+
+  it 'displays project list' do
+    expect(page).to have_css '.projects'
+    within '.projects' do
+      expect(page).to have_content 'My First Website'
+      expect(page).to have_content 'FizzBuzz'
+    end
   end
 end
