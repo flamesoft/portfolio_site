@@ -369,3 +369,24 @@ div.projects {
 .fi-social-apple, .fi-social-windows {
   color: #8cc739;
 }
+.row{
+  margin-top: 10px;
+}
+.columns{
+  #cell{
+    max-width: 500px;
+    height: 300px;
+  }
+  img{
+    display:block;
+    margin: auto;
+    width: 178px;
+    height: 154px;
+    margin-top:30px;
+    margin-bottom: 10px;
+    position:relative;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+  }
+}

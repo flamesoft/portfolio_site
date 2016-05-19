@@ -1,5 +1,28 @@
-- name: My First Website
-  description: Simple HTML5 site I've build during the PrepCourse
-
+- name: My First Sinatra Website
+  description: Simple HTML5 site based on Sinatra I've build during the PrepCourse
+  image_url: http://www.sinatrarb.com/images/logo.png
+  git_repo: https://github.com/flamesoft/first-sinatra
 - name: FizzBuzz
   description: My first Test driven ruby project
+  image_url: ruby.svg
+  git_repo: https://github.com/flamesoft/fizzbuzz
+- name: ATM Challenge
+  description: It's a simple Ruby program that simulates a financial institution that wants to allow its customers to withdraw funds from their accounts using an Automatic Teller Machine (ATM).
+  image_url:
+  git_repo: https://github.com/flamesoft/atm
+- name: Library Challenge
+  description: It is a simple Ruby program that simulates a library which lends out books to its users
+  image_url:
+  git_repo: https://github.com/flamesoft/library-challenge
+- name: BMI
+  description: This is a javascript website which can calculate the BMI value
+  image_url:
+  git_repo: https://github.com/flamesoft/BMI
+- name: FizzBuzz Js
+  description: This is a javascript version of the FizzBuzz project
+  image_url:
+  git_repo: https://github.com/flamesoft/fizz_buzz_js
+- name: Slow Food Sinatra
+  description: This is a Sinatra e-commerce website developed with TDD.
+  image_url: slowfood.jpg
+  git_repo: https://github.com/flamesoft/slow_food_sinatra

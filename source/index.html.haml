@@ -5,8 +5,17 @@
     %h2.section_h2_aboutIntro Working with software development since 2000
     %p.intro I would like to help you with my experience
     %p.intro So I made the website to make you know more about me
+    %p.intro= today
 %section
-  .projects
-    - data.projects.each do |project|
-      %h4= project[:name]
-      %p= project[:description]
+  .row
+    .large-8.columns
+    - data.projects.each_slice(3) do |group|
+      .row
+      - group.each do |project|
+        - image_url = get_image(project[:image_url])
+        .large-4.small-6.columns
+          #cell
+            = image_tag image_url
+            .panel
+              %h4= project[:name]
+              %h6.subheader= project[:description]
