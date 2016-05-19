@@ -2,11 +2,18 @@
 %section
   %h2 About me
   .row
-    .large-8.columns
-    - data.me.each do |line|
+    .large-10.columns
+    - data.me.each_slice(4) do |group|
       .row
-        %h3= line.type
-        %p= line.line
+      - group.each do |project|
+        - image_url = get_image(project[:image_url])
+        .large-3.small-6.columns
+          #cell
+            = image_tag image_url
+            .panel
+              %h4= project[:type]
+              %h6.subheader= project[:line]
+
 %section
   %h2 Programming Experience
   .row
