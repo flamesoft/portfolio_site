@@ -3,6 +3,7 @@
 
 $header: #3B4750;
 $header_alt: #9B9B9B;
+$bar_background: #292c2f;
 body {
   background: #fff;
   text-align: center;
@@ -151,11 +152,11 @@ div.top {
     padding: 0 0 0 0px;
     box-sizing: content-box;
     position: relative;
-    background-color: #292c2f;
+    background-color: $bar_background;
 }
 div.header_buttons {
     display: block;
-    position: fixed;
+    position: relative;;
     top: 0px;
     right: 98px;
     height: 40px;
