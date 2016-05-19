@@ -1,6 +1,8 @@
 @charset "utf-8";
 @import "normalize";
 
+$header: #3B4750;
+$header_alt: #9B9B9B;
 body {
   background: #fff;
   text-align: center;
@@ -15,12 +17,22 @@ body {
 }
 
 h1 {
-  color: #3B4750;
+  color: $header;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.8em;
   font-weight: 400;
   font-weight:bolder;
   margin: 0;
+}
+
+h2{
+  color: $header_alt;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.8em;
+  font-weight: 400;
+  font-weight:bolder;
+  margin: 0;
+  margin-top: 20px;
 }
 .intro {
   margin: 0.5em 0;
