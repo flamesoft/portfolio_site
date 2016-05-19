@@ -386,6 +386,7 @@ div.projects {
   margin-top: 10px;
 }
 .columns{
+  float: left !important;
   #cell{
     max-width: 500px;
     height: 300px;
@@ -401,5 +402,12 @@ div.projects {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 15px;
+  }
+  #cell_end{
+    max-width: 500px;
+    height: 300px;
+    display:block;
+    margin: auto;
+    background-color: $bar_background;
   }
 }
