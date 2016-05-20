@@ -1,32 +1,40 @@
 - name: GSOPlay
   description: This project includes apps for iOS, Android and Apple TV platforms. It is developed for the Gothenburg Symphony.
   image_url: http://www.flamesoft.se/images/portfolio/gso.jpg
-  app_link:
+  ios: https://itunes.apple.com/us/app/gsoplay-season-14-15/id870519418?mt=8&ign-mpt=uo%3D2
+  android: https://play.google.com/store/apps/details?id=se.gso.play
 - name: Prisma Daps
   description: It is an Android app which communicates with hardware via NFC communication. It is developed for Prisma Tibro AB.
   image_url: http://www.flamesoft.se/images/portfolio/prisma.jpg
-  app_link:
+  ios:
+  android: Enterprise app, not on Play Store
 - name: Intro Inred
   description: It is an iOS app which shows portfolio and calculates price for interior design company Intro Inred.
   image_url: http://www.flamesoft.se/images/portfolio/introinred.jpg
-  app_link:
+  ios: https://itunes.apple.com/us/app/intro-inred/id1004988910?ls=1&mt=8
+  android:
 - name: Eget
   description: It is an iPhone app which helps small company owners to estimate their salary or invoice.
   image_url: http://www.flamesoft.se/images/portfolio/eget.jpg
-  app_link:
+  ios: https://itunes.apple.com/se/app/eget/id882540541?mt=8
+  android:
 - name: Mindful Eating Journal
   description: This is an iPhone app which tracks people's eating habbit.
   image_url: http://www.flamesoft.se/images/portfolio/mej.jpg
-  app_link:
+  ios: https://itunes.apple.com/us/app/mindful-eating-journal/id864880526?mt=8
+  android:
 - name: Ink n Art
   description: This is an iPhone app with which people can create business cards and send them to a print shop Ink n Art.
   image_url: http://www.flamesoft.se/images/portfolio/inknart.jpg
-  app_link:
+  ios: https://itunes.apple.com/us/app/cuby-tryck/id803030634?ls=1&mt=8
+  android:
 - name: Konferens App
   description: This is a prototype app for hotels to show their conference rooms events.
   image_url: http://www.flamesoft.se/images/portfolio/konf.jpg
-  app_link:
+  ios: Prototype for iPad
+  android:
 - name: TVNote
   description: This is a prototype for Apple TV which converts a TV to a digital display for restaurangs or other companies.
   image_url:
-  app_link:
+  ios: Prototype for Apple TV
+  android:

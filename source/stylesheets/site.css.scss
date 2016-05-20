@@ -38,6 +38,10 @@ h2{
   margin: 0;
   margin-top: 20px;
 }
+
+p.small{
+  font-size: 0.8em;
+}
 .intro {
   margin: 0.5em 0;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -368,7 +372,7 @@ div.projects {
   float: left !important;
   #cell{
     max-width: 500px;
-    height: 300px;
+    height: 350px;
   }
   img{
     display:block;

@@ -1,0 +1,28 @@
+.row
+  .large-8.columns
+  - data.apps.each_slice(3) do |group|
+    .row
+    - group.each do |project|
+      - image_url = get_image(project[:image_url])
+      .large-4.small-6.columns
+        #cell
+          = image_tag image_url
+          .panel
+            %h4= project[:name]
+            %h6.subheader= project[:description]
+            - if !project[:ios].nil? then
+              - if project[:ios].include? "http" then
+                %a{href: project[:ios], target: '_blank'}
+                  %i.fi-social-apple
+              - else
+                %i.fi-social-apple
+                %p.small= project[:ios]
+
+
+            - if !project[:android].nil? then
+              - if project[:android].include? "http" then
+                %a{href: project[:android], target: '_blank'}
+                  %i.fi-social-android
+              - else
+                %i.fi-social-android
+                %p.small= project[:android]
