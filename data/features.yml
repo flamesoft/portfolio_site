@@ -1,9 +1,9 @@
-- line: I have many ideas and like to try new things.
-  image_url:
-  type: Creative
+- line: I have many ideas and like to try new things. I am optimistics and patient. I like challenge at work and can handle high working pressure.
+  image_url: idea.svg
+  type: What am I good at?
 - line: objective-c, swift, java, C++, C#, Ruby, javascript, html, css
-  type: Programming Language
-  image_url:
-- line: Programming, driving my company Flame Soft, handcraft
-  image_url:
-  type: Favorite
+  type: What do I program with?
+  image_url: puzzel.svg
+- line: Programming, driving my company Flame Soft, travel, handcraft
+  image_url: globe.svg
+  type: What do I like?
