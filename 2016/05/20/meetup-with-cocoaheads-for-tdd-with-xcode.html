@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+      <meta charset='utf-8'>
+        <meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no' name='viewport'>
+          <!-- Use title if it's in the page YAML frontmatter -->
+          <title>Meetup with Cocoaheads for TDD with XCode</title>
+          <link href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.css' rel='stylesheet' type='text/css'>
+          <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+          <link href='http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
+            <link href="../../../stylesheets/site.css" rel="stylesheet" />
+            <script src="../../../javascripts/all.js"></script>
+          </link>
+        </meta>
+      </meta>
+    </meta>
+  </head>
+  <body class='x2016 x2016_05 x2016_05_20 x2016_05_20_meetup-with-cocoaheads-for-tdd-with-xcode'>
+    <div id='header'>
+      <nav class='navigation'>
+        <div class='header_buttons'>
+          <ul>
+            <li><a href="../../../" target="_self">Home</a></li>
+            <li><a href="../../../about.html" target="_self">About</a></li>
+            <li><a href="../../../projects.html" target="_self">Projects</a></li>
+            <li><a href="../../../blogs.html" target="_self">Blog</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class='post-container'>
+        <div class='logo_left'>
+          <img src="../../../images/logo.png" alt="Logo" />
+        </div>
+      </div>
+    </div>
+    <h1 id="testing-with-xcode">Testing With XCode</h1>
+    
+    <h3 id="note-from-meetup-with-cocoaheads-yesterday">Note from Meetup with Cocoaheads yesterday</h3>
+    
+    <h4 id="enable-test-coverage">Enable test coverage</h4>
+    <p>Add new schema for only testing and not production.
+    Click the target name on the left top
+    Commands
+    Run all target tests</p>
+    
+    <p>cmd - u</p>
+    
+    <p>Run last test</p>
+    
+    <p>ctrl + cmd + alt - g</p>
+    
+    <h4 id="naming">Naming</h4>
+    
+    <p>func testMenthodName_WithCertainState_ShouldDoSth()</p>
+    
+    <h4 id="principle">Principle</h4>
+    
+    <p>1 assertion at a time</p>
+    
+    <p>XCTAssertEqual(..)</p>
+    
+    <h4 id="helping-methods">Helping Methods</h4>
+    
+    <p>fun helper(file: String = #file, line: Uint = #line){
+    	XCTAssertTrue(aStatement, “Wrong in helper”, file: file, line: line)
+    }</p>
+    
+    <p>It can tell which line got wrong when calling this helper method.</p>
+    
+    <p>Test View Controllers</p>
+    
+    <p>instantiate view controller with identifier for the view controller. This binds the outlets.
+    put the view controller as the rootviewcontroller and assertNotNil</p>
+    
+    <pre><code>   override func setUp() {
+              super.setUp()
+              let storyBoard = UIStoryBoard(name: "mainStoryBoard", bundle:
+              NSBundle.mainBundle())
+              viewController.hangman = Hangman(word: Word(string: "test"), tries:5)
+              UIApplication.sharedApplication().keyWindow!.rootViewController = viewController
+              XCTAssertNotNil(viewController.view)
+       }
+    </code></pre>
+    
+    <h4 id="source">Source</h4>
+    <p>Natasha the robot</p>
+    
+    <p>Jon Reid - qualitycoding.org</p>
+    <footer class='footer'>
+      <div class='row'>
+        <div class='small-12 medium-6 large-5 columns'>
+          <p class='logo'>
+            <i class='fi-shield'></i>
+            YAN ZHANG
+          </p>
+          <p class='footer-links'>
+            <a href="../../../" target="_self">Home</a>
+            <a href="../../../about.html" target="_self">About</a>
+            <a href="../../../projects.html" target="_self">Projects</a>
+            <a href="../../../blogs.html" target="_self">Blog</a>
+          </p>
+          <p class='copywrite'>Copywrite not copywrite © 2016</p>
+        </div>
+        <div class='small-12 medium-6 large-4 columns'>
+          <ul class='contact'>
+            <li>
+              <p><i class='fi-marker'></i>The most windy place, Gothenburg, Sweden
+              </p>
+            </li>
+            <li>
+              <p><i class='fi-mail'></i>emma2740@yahoo.com
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class='small-12 medium-12 large-3 columns'>
+          <p class='about'>About Yan Zhang</p>
+          <p class='about subheader'>You can always find me beside a Mac.</p>
+          <ul class='inline-list social'>
+            <a href='https://www.facebook.com/flamesoft/'>
+              <i class='fi-social-facebook'></i>
+            </a>
+            <a href='https://twitter.com/FlameSoftAB'>
+              <i class='fi-social-twitter'></i>
+            </a>
+            <a href='https://se.linkedin.com/in/yanzhangflamesoft'>
+              <i class='fi-social-linkedin'></i>
+            </a>
+            <a href='https://github.com/flamesoft/'>
+              <i class='fi-social-github'></i>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <link href='https://code.jquery.com/jquery-2.2.3.min.js' type='text/javascript'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.min.js' type='text/javascript'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation.topbar.min.js' type='text/javascript'>
+  </body>
+</html>
