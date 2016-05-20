@@ -1,0 +1,9 @@
+- line: I have many ideas and like to try new things.
+  image_url:
+  type: Creative
+- line: objective-c, swift, java, C++, C#, Ruby, javascript, html, css
+  type: Programming Language
+  image_url:
+- line: Programming, driving my company Flame Soft, handcraft
+  image_url:
+  type: Favorite

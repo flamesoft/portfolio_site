@@ -1,0 +1,10 @@
+.row
+  .large-12.columns
+    - data.features.each do |feature|
+      - image_url = get_image(feature[:image_url])
+      .large-4.small-6.columns
+        #cell
+          = image_tag image_url
+          .panel
+            %h4= feature[:type]
+            %h6.subheader= feature[:line]
